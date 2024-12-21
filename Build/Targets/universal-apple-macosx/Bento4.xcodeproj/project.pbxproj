@@ -90,6 +90,8 @@
 		AC28E6BB2389DE05005D9BE9 /* Ap4Dac3Atom.h in Headers */ = {isa = PBXBuildFile; fileRef = AC28E6B92389DE05005D9BE9 /* Ap4Dac3Atom.h */; };
 		ACB4314823BF9B8F003C0A81 /* Ap4VpccAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = ACB4314623BF9B8F003C0A81 /* Ap4VpccAtom.h */; };
 		ACB4314923BF9B8F003C0A81 /* Ap4VpccAtom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACB4314723BF9B8F003C0A81 /* Ap4VpccAtom.cpp */; };
+		B3320F7E2D176A4F00B8A7A3 /* LibMp4Decrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3320F772D1769FE00B8A7A3 /* LibMp4Decrypt.cpp */; };
+		B3320F802D176A4F00B8A7A3 /* libBento4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA7E6C914ACD763008AA54E /* libBento4.a */; };
 		C24DAFB822F4385F008473B4 /* Ap4Ac3Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C24DAFB722F4385F008473B4 /* Ap4Ac3Parser.cpp */; };
 		CA00667D1015399A004C0D5F /* Mp42Ts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA00667C1015399A004C0D5F /* Mp42Ts.cpp */; };
 		CA00A65C1A1C38210064B4D3 /* Mp4Pssh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA00A65B1A1C38210064B4D3 /* Mp4Pssh.cpp */; };
@@ -436,6 +438,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B3320F7B2D176A4F00B8A7A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = Bento4;
+		};
 		CA00667710153959004C0D5F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
@@ -1052,6 +1061,8 @@
 		AC28E6B92389DE05005D9BE9 /* Ap4Dac3Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ap4Dac3Atom.h; sourceTree = "<group>"; };
 		ACB4314623BF9B8F003C0A81 /* Ap4VpccAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ap4VpccAtom.h; sourceTree = "<group>"; };
 		ACB4314723BF9B8F003C0A81 /* Ap4VpccAtom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ap4VpccAtom.cpp; sourceTree = "<group>"; };
+		B3320F772D1769FE00B8A7A3 /* LibMp4Decrypt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LibMp4Decrypt.cpp; sourceTree = "<group>"; };
+		B3320F842D176A4F00B8A7A3 /* LibMp4Decrypt.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LibMp4Decrypt.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24DAFB622F43840008473B4 /* Ap4Ac3Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ap4Ac3Parser.h; sourceTree = "<group>"; };
 		C24DAFB722F4385F008473B4 /* Ap4Ac3Parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ap4Ac3Parser.cpp; sourceTree = "<group>"; };
 		CA00667310153951004C0D5F /* mp42ts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mp42ts; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1404,6 +1415,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B3320F7F2D176A4F00B8A7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3320F802D176A4F00B8A7A3 /* libBento4.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA00667110153951004C0D5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1804,6 +1823,7 @@
 				CAFE9C691D1B487700F9FF67 /* LargeFilesTest */,
 				CA87B9421F81B08B005F42D6 /* mp4diff */,
 				CA87B9521F895A84005F42D6 /* mp4iframeindex */,
+				B3320F842D176A4F00B8A7A3 /* LibMp4Decrypt.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1932,6 +1952,7 @@
 			isa = PBXGroup;
 			children = (
 				CA646A8C0CE97B2D009699D7 /* Mp4Decrypt.cpp */,
+				B3320F772D1769FE00B8A7A3 /* LibMp4Decrypt.cpp */,
 			);
 			path = Mp4Decrypt;
 			sourceTree = "<group>";
@@ -2690,6 +2711,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B3320F792D176A4F00B8A7A3 /* LibMp4Decrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3320F812D176A4F00B8A7A3 /* Build configuration list for PBXNativeTarget "LibMp4Decrypt" */;
+			buildPhases = (
+				B3320F7C2D176A4F00B8A7A3 /* Sources */,
+				B3320F7F2D176A4F00B8A7A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3320F7A2D176A4F00B8A7A3 /* PBXTargetDependency */,
+			);
+			name = LibMp4Decrypt;
+			productName = Mp4Dump;
+			productReference = B3320F842D176A4F00B8A7A3 /* LibMp4Decrypt.dylib */;
+			productType = "com.apple.product-type.tool";
+		};
 		CA00667210153951004C0D5F /* Mp42Ts */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA00667A10153994004C0D5F /* Build configuration list for PBXNativeTarget "Mp42Ts" */;
@@ -3476,11 +3514,20 @@
 				CA86EED619A95DD3008A3B00 /* FragmentCreatorTest */,
 				CAFE9C681D1B487700F9FF67 /* LargeFilesTest */,
 				CA87B9511F895A84005F42D6 /* Mp4IframeIndex */,
+				B3320F792D176A4F00B8A7A3 /* LibMp4Decrypt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B3320F7C2D176A4F00B8A7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3320F7E2D176A4F00B8A7A3 /* LibMp4Decrypt.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA00667010153951004C0D5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3945,6 +3992,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B3320F7A2D176A4F00B8A7A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC045055464E500DB518D /* Bento4 */;
+			targetProxy = B3320F7B2D176A4F00B8A7A3 /* PBXContainerItemProxy */;
+		};
 		CA00667810153959004C0D5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC045055464E500DB518D /* Bento4 */;
@@ -4440,6 +4492,26 @@
 				VALID_ARCHS = "arm64 arm64e i386 x86_64";
 				"VALID_ARCHS[sdk=iphoneos*]" = "armv6 armv7 armv7s arm64";
 				"VALID_ARCHS[sdk=iphonesimulator*]" = "i386 x86_64";
+			};
+			name = Release;
+		};
+		B3320F822D176A4F00B8A7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME).dylib";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		B3320F832D176A4F00B8A7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME).dylib";
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
 		};
@@ -5614,6 +5686,15 @@
 			buildConfigurations = (
 				1DEB91F008733DB70010E9CD /* Debug */,
 				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3320F812D176A4F00B8A7A3 /* Build configuration list for PBXNativeTarget "LibMp4Decrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3320F822D176A4F00B8A7A3 /* Debug */,
+				B3320F832D176A4F00B8A7A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
